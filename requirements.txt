@@ -1,6 +1,7 @@
 numpy
 pandas
 sklearn
-pymongo==4.2.0
+certifi
+pymongo[srv]==4.2.0
 
 -e .
