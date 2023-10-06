@@ -1,7 +1,9 @@
 numpy
 pandas
-sklearn
+scikit-learn
 certifi
 pymongo[srv]==4.2.0
+from-root
+
 
 -e .
