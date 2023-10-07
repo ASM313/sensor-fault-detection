@@ -6,4 +6,6 @@ pymongo[srv]
 from-root==1.3.0
 PyYAML
 scipy
+dill
+imblearn
 -e .
