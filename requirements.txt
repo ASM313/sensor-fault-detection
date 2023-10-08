@@ -9,4 +9,9 @@ scipy
 dill
 imblearn
 xgboost
+fastapi
+uvicorn
+flask
+gunicorn
+
 -e .
