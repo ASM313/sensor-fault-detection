@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 artifact/
+saved_models/
 build/
 notebooks/
 develop-eggs/

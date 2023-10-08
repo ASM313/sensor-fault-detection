@@ -1,4 +1,4 @@
-TRAINIG_BUCKET_NAME = "sensor-model"
+TRAINING_BUCKET_NAME = "sensor-model"
 
 PIPELINE_BUCKET_NAME = "sensor-datasource"
 
