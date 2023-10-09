@@ -13,5 +13,5 @@ fastapi
 uvicorn
 flask
 gunicorn
-
+pypi-json==0.4.0
 -e .
