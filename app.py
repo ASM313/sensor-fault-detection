@@ -16,7 +16,7 @@ from sensor.ml.model.estimator import ModelResolver,TargetValueMapping
 from sensor.utils.main_utils import load_object
 from fastapi.middleware.cors import CORSMiddleware
 import os
-from flask import Flask,request,render_template, redirect
+from flask import Flask,request,render_template
 import pandas as pd
 import numpy as np
 
@@ -47,7 +47,7 @@ def train_route():
     train_pipeline.run_pipeline()
     logging.info("Training successful..!!")
     msg = "Training successful !!"
-    return render_template("result.html",msg=msg)
+    return render_template("index.html", msg=msg)
     
 @app.route("/predict", methods=['GET', 'POST'])
 def predict_route():
@@ -108,7 +108,7 @@ def predict_route():
             result = "Negative"    
         logging.info("Showing result to User at Front end")
 
-        return render_template("result.html", result=result)
+        return render_template("index.html", result=result)
         
     except Exception as e:
         err_msg = f"Error Occurred! {e}"
