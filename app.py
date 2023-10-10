@@ -47,7 +47,7 @@ def train_route():
     train_pipeline.run_pipeline()
     logging.info("Training successful..!!")
     msg = "Training successful !!"
-    return render_template("index.html")
+    return render_template("result.html",msg=msg)
     
 @app.route("/predict", methods=['GET', 'POST'])
 def predict_route():
