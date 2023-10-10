@@ -108,7 +108,7 @@ def predict_route():
             result = "Negative"    
         logging.info("Showing result to User at Front end")
 
-        return render_template("index.html", result=result)
+        return render_template("result.html", result=result)
         
     except Exception as e:
         err_msg = f"Error Occurred! {e}"

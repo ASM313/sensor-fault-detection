@@ -7,5 +7,30 @@
 </head>
 <body>
     <h1>{{msg}}</h1>
+     <!-- For training of model -->
+     <div class="row">
+        <!-- Take a .csv file for prediction -->
+        <div class="col-sm-6">
+          <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Success card title</h5>
+              <form action="/predict" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                  <label for="csvFile" class="form-label">Upload .csv file of Sensors information</label>
+                  <input class="form-control" type="file" accept=".csv" required id="csvFile" name="csvFile">
+                
+                  <!-- For making predictions -->
+                  <button type="submit" class="btn btn-info">Make Predictions</button>
+            
+                </div>    
+              </form>                   
+            </div>
+          </div>
+              
+        </div>
+      </div>
+      <h1>Predicted class is {{result}}</h1>
+     
 </body>
 </html>
